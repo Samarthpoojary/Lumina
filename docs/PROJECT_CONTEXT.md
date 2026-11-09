@@ -34,7 +34,7 @@ These are prototypes, not production-ready implementations.
 
 Three separate stations:
 
-- **Bomb Maker:** solve short ECE puzzles to add ammo to the team supply. Keep ammo scarce.
+- **Bomb Maker:** three independent bomb circuit boards with different rarity, impact, flight-speed, and component-count attributes. The maker assembles each abstract circuit by placing components into ordered nodes, using a five-slot component feed. Every type in the component catalog must appear through a shuffled draw bag. A used feed slot stays empty for one second, then draws a new component. A full circuit enables its Create Bomb button. Incorrect circuit feedback belongs to that bomb card only and must not alter shared match state or reset the station. A correct circuit adds one team ammo crate subject to the cap. These are fictional game components and puzzle recipes, not real explosive construction guidance.
 - **Thrower:** at most three shots per match. The player calculates launch angle from the displayed range equation. Only precise shots interrupt the rival build. Do not write to the database while the angle control is moving.
 - **Builder:** complete four construction stages and advance team build progress. Do not use Builder HP or repair-HP mechanics.
 
